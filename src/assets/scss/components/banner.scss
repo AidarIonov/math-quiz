@@ -1,0 +1,40 @@
+@use '../utils/' as *;
+
+.banner {
+  min-height: 364px;
+  @include flex(center);
+  background-size: cover;
+  background-position: center center;
+  &__content {
+    @include flex($justify: space-between);
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    min-height: 204px;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 389px;
+    width: 100%;
+    padding: 38px;
+    h1 {
+      font-weight: 400;
+      font-size: 3.6rem;
+      line-height: 42px;
+    }
+    span {
+      font-size: 1.4rem;
+      line-height: 16px;
+      color: #626262;
+    }
+  }
+  &__content-footer {
+    @include flex(center, space-between);
+    div {
+      padding: 8px 16px;
+      background-color: #262626;
+      border-radius: 16px;
+      color: #fff;
+      font-size: 1.3rem;
+      line-height: 15px;
+    }
+  }
+}

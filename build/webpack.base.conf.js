@@ -25,7 +25,9 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[contenthash].js`,
     path: PATHS.dist,
-    publicPath: '/'
+    publicPath: '/',
+    clean: true,
+    assetModuleFilename: 'assets/img/[name].[hash][ext][query]',
   },
   optimization: {
     splitChunks: {

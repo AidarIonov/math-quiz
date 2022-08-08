@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container header__container">
-        <a href="" class="header__logo">
-          <img src="/assets/img/logo.svg" alt="Logo">
-        </a>
-        <div class="header__btns">
-          <div class="btn">Sign In</div>
-          <div class="btn black">Sign Up</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашняя страница</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="index.html" class="header__logo">
+            <img src="/assets/img/logo.svg" alt="Logo" />
+          </a>
+          <div class="header__btns">
+            <div class="btn">Sign In</div>
+            <div class="btn black">Sign Up</div>
+          </div>
         </div>
-      </div>
-    </header>
-  </div>
-</body>
+      </header>
+      <main class="main">
+        <div class="container">
+          <div class="row restaurants">
+            <a href="./pushkin.html" class="col-lg-6">
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__text">
+                    <h2>Трактир “Пушкин”</h2>
+                    <p>Европейская кухня</p>
+                  </div>
+                  <span>40-50 мин</span>
+                </div>
+              </div>
+            </a>
+            <a href="./hachapurnaya.html" class="col-lg-6">
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__text">
+                    <h2>Хачапурная №1</h2>
+                    <p>Грузинская кухня</p>
+                  </div>
+                  <span>40-50 мин</span>
+                </div>
+              </div>
+            </a>
+            <a href="./samurai.html" class="col-lg-6">
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__text">
+                    <h2>Суши-бар “Самурай”</h2>
+                    <p>Японская кухня</p>
+                  </div>
+                  <span>40-50 мин</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container footer__container">
+          <a href="#">
+            <img src="/assets/img/white-logo.svg" alt="Logo">
+          </a>
+          <hr/>
+          <a href="#" class="footer__text">© 2017 Uber Technologies Inc.</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

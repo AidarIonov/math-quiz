@@ -1,0 +1,25 @@
+@use '../utils/' as *;
+
+.card {
+  padding: 16px;
+  min-height: 160px;
+  margin-right: 16px;
+  margin-bottom: 49px;
+  h2 {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #626262;
+  }
+  span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 21px;
+  }
+  @include tablet() {
+    margin: 0 0 16px 0;
+  }
+}
