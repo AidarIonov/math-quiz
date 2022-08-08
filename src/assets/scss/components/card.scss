@@ -1,13 +1,21 @@
 @use '../utils/' as *;
 
 .card {
-  padding: 16px;
+  padding: 0;
   min-height: 160px;
   margin-right: 16px;
   margin-bottom: 49px;
-  h2 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  &__content {
+    @include flex($justify: space-between);
+    padding: 16px;
+    flex-direction: column;
+  }
+  h3 {
     font-size: 1.6rem;
     line-height: 24px;
+    margin-bottom: 5px;
   }
   p {
     font-size: 13px;
