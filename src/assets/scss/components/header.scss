@@ -5,6 +5,11 @@
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
   &__container {
     @include flex(center, space-between);
+    gap: 15px;
+    flex-wrap: wrap;
+    // @include mobile {
+    //   flex-direction: column;
+    // }
   }
   &__btns {
     display: flex;
