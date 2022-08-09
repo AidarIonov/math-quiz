@@ -1,6 +1,13 @@
 @use '../utils/' as *;
 
+.card-wrapper:hover {
+  .card {
+    background-color: rgba(#757575, 0.04);
+  }
+}
+
 .card {
+  transition: all .3s ease;
   padding: 0;
   min-height: 160px;
   margin: 0 16px 49px 0;
@@ -40,7 +47,7 @@
   @include mobile {
     grid-template-columns: 1fr 102px;
     border: none;
-    border-bottom: 1px solid rgba(#757575, .4);
+    border-bottom: 1px solid rgba(#757575, 0.4);
     min-height: 102px;
   }
 }
