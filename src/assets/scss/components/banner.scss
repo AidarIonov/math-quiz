@@ -56,10 +56,13 @@
 }
 
 .banner__content {
-  width: 100%;
   @include mobile {
+    width: 95%;
     padding: 24px 49px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

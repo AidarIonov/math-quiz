@@ -1,7 +1,9 @@
 const { merge } = require('webpack-merge');
 const baseWebpackConfig = require('./webpack.base.conf');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { extendDefaultPlugins } = require('svgo');
+
 const buildWebpackConfig = merge(baseWebpackConfig, {
   mode: 'production',
   module: {
@@ -14,6 +16,7 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
   },
   optimization: {
     minimizer: [
+      new CssMinimizerPlugin(),
       '...',
       new ImageMinimizerPlugin({
         minimizer: {
