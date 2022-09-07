@@ -32,8 +32,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.2.0",
     "normalize.css": "^8.0.1"
   }
 }

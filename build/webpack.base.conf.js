@@ -55,17 +55,9 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: `${PATHS.src}/${PATHS.assets}img`,
-          to: `${PATHS.assets}img`
+          from: `${PATHS.src}/${PATHS.assets}`,
+          to: `${PATHS.dist}/assets`,
         },
-        // {
-        //   from: `${PATHS.src}/${PATHS.assets}fonts`,
-        //   to: `${PATHS.assets}fonts`
-        // },
-        // {
-        //   from: `${PATHS.src}/static`,
-        //   to: ''
-        // }
       ]
     }),
   ],
@@ -84,10 +76,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]'
-        }
+        type: 'asset/resource',
       },
       {
         test: /\.s[ac]ss$/,

@@ -1,13 +1,5 @@
 @use './utils/' as *;
-@import '~bootstrap/scss/bootstrap';
 @import '~normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-@import './components/header';
-@import './components/card';
-@import './components/footer';
-@import './components/banner';
-@import './components/content';
 
 * {
   padding: 0;
