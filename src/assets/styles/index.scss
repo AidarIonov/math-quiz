@@ -1,0 +1,17 @@
+@import "./null";
+@import "./vars";
+@import "./fonts";
+@import "./animations";
+@import "./mixins";
+@import "./buttons";
+@import "./radio-buttons.css";
+
+@import "/src/pages";
+@import "/src/features/modal-result";
+@import "/src/features/modal-about";
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
