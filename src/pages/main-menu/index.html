@@ -1,0 +1,50 @@
+<div class="main-menu" style='background: url("./src/assets/img/bg.jpeg")'>
+    <div class="container main-menu__container">
+        <form class="main-menu__form" id="main-menu">
+            <h1 class="main-menu__title">
+                Math Quiz
+            </h1>
+            <div class="main-menu__player-name">
+                <label for="main-menu-input-name">
+                    Tell us your name?
+                </label>
+                <input id="main-menu-input-name" name="name" type="text" placeholder="name" required>
+            </div>
+            <fieldset class="radio-buttons main-menu__game-mode">
+                <legend>
+                    Choose your game mode:
+                </legend>
+                <div class="main-menu__game-mode-radio">
+                    <input class="radio-buttons__input" id="main-menu-game-mode-practice" type="radio" name="gameMode" value="practice">
+                    <label class="radio-buttons__label main-menu__game-mode-label" for="main-menu-game-mode-practice">
+                        Practice
+                    </label>
+                </div>
+                <div  class="main-menu__game-mode-radio">
+                    <input class="radio-buttons__input" id="main-menu-game-mode-time-attack" type="radio" name="gameMode" value="timeAttack" checked>
+                    <label class="radio-buttons__label main-menu__game-mode-label" for="main-menu-game-mode-time-attack">
+                        Time Attack
+                    </label>
+                </div>
+            </fieldset>
+
+            <ul class="main-menu__button-list">
+                <li class="main-menu__button-item">
+                    <button class="btn" id="main-menu-btn-play" type="submit">
+                        Play
+                    </button>
+                </li>
+                <li class="main-menu__button-item">
+                    <app-link class="btn" href="leaderboard">
+                        Leaderboard
+                    </app-link>
+                </li>
+                <li class="main-menu__button-item">
+                    <button class="btn" id="main-menu-btn-about" type="button">
+                        About
+                    </button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>

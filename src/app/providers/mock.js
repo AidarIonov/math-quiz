@@ -19,37 +19,37 @@ export const setMockerFunction = () => {
 
 const leaderboard = [
     {
-        name: "Aterm",
+        name: "Kate",
         mode: GameMode.Practice,
         level: 1,
         score: 4
     },
     {
-        name: "Nurz",
+        name: "John",
         mode: GameMode.TimeAttack,
         level: 1,
         score: 4
     },
     {
-        name: "Talgat",
+        name: "Jack",
         mode: GameMode.Practice,
         level: 1,
         score: 4
     },
     {
-        name: "Tala",
+        name: "Ben",
         mode: GameMode.TimeAttack,
         level: 1,
         score: 4
     },
     {
-        name: "Sardor",
+        name: "Marty",
         mode: GameMode.TimeAttack,
         level: 1,
         score: 3
     },
     {
-        name: "Hurma",
+        name: "Wendy",
         mode: GameMode.TimeAttack,
         level: 1,
         score: 4
@@ -79,7 +79,7 @@ const leaderboard = [
         score: 76
     },
     {
-        name: "Slice Mem",
+        name: "Mem",
         mode: GameMode.TimeAttack,
         level: 2,
         score: 21

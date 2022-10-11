@@ -1,0 +1,141 @@
+.leaderboard {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-bg-main;
+    @include font-default(400, 20px, normal, black);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid black;
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+
+        padding: 40px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 50px;
+    }
+
+    &__mode-selector {
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: left;
+        width: 180px;
+        @include font-default(400, 20px, normal, black);
+
+        option {
+            font-size: 20px;
+        }
+    }
+
+    &__table {
+        margin-top: 25px;
+        width: 100%;
+
+        span {
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    &__table-content {
+        height: 43vh;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar,
+        &::-webkit-scrollbar-thumb {
+            width: 26px;
+            border-radius: 13px;
+            background-clip: padding-box;
+            border: 10px solid transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 0 10px;
+        }
+    }
+
+    &__table-row {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 30%;
+            text-align: center;
+        }
+    }
+
+    hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        background-color: black;
+        height: 1px;
+    }
+
+    &__buttons {
+        position: absolute;
+        bottom: 40px;
+        margin-top: 20px;
+        max-width: 400px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        app-link {
+            width: 150px;
+            height: 49px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .leaderboard {
+        &__title {
+            font-size: 40px;
+        }
+
+        &__mode-selector {
+            width: 135px;
+            font-size: 18px;
+
+            option {
+                font-size: 14px;
+            }
+        }
+
+        &__buttons {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 15px;
+            gap: 10px;
+
+            app-link {
+                margin: 0 auto;
+                height: 49px;
+                font-size: 20px;
+            }
+        }
+    }
+}

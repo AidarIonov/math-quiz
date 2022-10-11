@@ -42,7 +42,8 @@
 @keyframes zoomIn {
     from {
         opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
+        transform: translateY(-100%);
+        // transform: scale3d(0.3, 0.3, 0.3);
     }
 
     50% {
@@ -52,6 +53,7 @@
 
 .animate__zoomIn {
     animation-name: zoomIn;
+    animation-duration: .3s;
     animation-timing-function: cubic-bezier(0, 1, 0.79, 1);
 }
 
